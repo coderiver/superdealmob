@@ -1,24 +1,28 @@
 <!-- BEGIN header--> 
 	<div class="header">
 		<div class="header__top">
-			<button class="header__nav js-toggle-nav" type="button"></button>
+			<div class="header__info">
+				<a href="#"><i class="icon-pin"></i>Днепропетровск</a>
+			</div>
+			<div class="header__info">
+				<a href="#" data-popup="js-popup-enter" class="header__user js-open-popup">Вход / Регистрация</a>
+			</div>
+		</div>
+		<div class="header__main">
 			<a class="header__logo" href="#">
 				<img src="img/logo.png" alt="logo">
 			</a>
-			<button class="header__search js-toggle" data-toggle="js-search" type="button"></button>
-		</div>
-		<div class="header__options">
-			<div class="header__links">
-				<div class="location">
-					<a href="#" class="location__link">Днепропетровск</a>
-				</div>
-				<a href="#" data-popup="js-popup-enter" class="header__user js-open-popup">Вход / Регистрация</a>
-			</div>
+			<a class="header__cart" href="#">
+				<span>2</span>
+			</a>
+			<button class="header__nav js-toggle-nav" type="button"></button>
 		</div>
 		<div class="header__menu">
 			<ul class="menu"> 
 				<li class="menu__item is-marked">
-					<span class="menu__link"><span>Бесплатные купоны</span></span>
+					<span class="menu__text">
+						<i class="cion-discount"></i>Еда и развлечения 
+					</span>
 					<ul class="menu__drop">
 						<li><a href="#">Сегодня</a></li>
 						<li><a href="#">Бесплатные купоны</a></li>
@@ -27,7 +31,7 @@
 					</ul>
 				</li>
 				<li class="menu__item">
-					<span class="menu__link"><span>Все акции</span></span>
+					<span class="menu__text">Все акции</span>
 					<ul class="menu__drop">
 						<li><a href="#">Все акции</a></li>
 						<li><a href="#">Обучение</a></li>
@@ -38,16 +42,7 @@
 				</li>
 			</ul> 
 		</div> 
-		<div class="form js-toggle-el js-search">
-			<div class="form__title">Поиск по сайту</div>
-			<div class="form__body">
-				<form>
-					<input class="form__input" type="text" placeholder="Поиск">
-					<button class="form__btn" type="submit">найти</button>
-				</form>
-			</div>
-		</div> 
-		<div class="nav js-nav"> 
+		<!-- <div class="nav js-nav"> 
 			<div class="nav__main js-nav-main">
 				<a href="#" class="balance-link">На счету: <span>234 грн.</span></a>
 				<ul class="nav__list">
@@ -62,6 +57,6 @@
 				</div>
 			</div>
 			<i class="nav__overlay js-nav-overlay"></i>
-		</div>
+		</div> -->
 	</div>
-	<!-- END header--> 
+	<!-- END header-->    

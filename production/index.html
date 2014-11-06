@@ -14,24 +14,28 @@
 	<!-- BEGIN header--> 
 	<div class="header">
 		<div class="header__top">
-			<button class="header__nav js-toggle-nav" type="button"></button>
+			<div class="header__info">
+				<a href="#"><i class="icon-pin"></i>Днепропетровск</a>
+			</div>
+			<div class="header__info">
+				<a href="#" data-popup="js-popup-enter" class="header__user js-open-popup">Вход / Регистрация</a>
+			</div>
+		</div>
+		<div class="header__main">
 			<a class="header__logo" href="#">
 				<img src="img/logo.png" alt="logo">
 			</a>
-			<button class="header__search js-toggle" data-toggle="js-search" type="button"></button>
-		</div>
-		<div class="header__options">
-			<div class="header__links">
-				<div class="location">
-					<a href="#" class="location__link">Днепропетровск</a>
-				</div>
-				<a href="#" data-popup="js-popup-enter" class="header__user js-open-popup">Вход / Регистрация</a>
-			</div>
+			<a class="header__cart" href="#">
+				<span>2</span>
+			</a>
+			<button class="header__nav js-toggle-nav" type="button"></button>
 		</div>
 		<div class="header__menu">
 			<ul class="menu"> 
 				<li class="menu__item is-marked">
-					<span class="menu__link"><span>Бесплатные купоны</span></span>
+					<span class="menu__text">
+						<i class="cion-discount"></i>Еда и развлечения 
+					</span>
 					<ul class="menu__drop">
 						<li><a href="#">Сегодня</a></li>
 						<li><a href="#">Бесплатные купоны</a></li>
@@ -40,7 +44,7 @@
 					</ul>
 				</li>
 				<li class="menu__item">
-					<span class="menu__link"><span>Все акции</span></span>
+					<span class="menu__text">Все акции</span>
 					<ul class="menu__drop">
 						<li><a href="#">Все акции</a></li>
 						<li><a href="#">Обучение</a></li>
@@ -51,16 +55,7 @@
 				</li>
 			</ul> 
 		</div> 
-		<div class="form js-toggle-el js-search">
-			<div class="form__title">Поиск по сайту</div>
-			<div class="form__body">
-				<form>
-					<input class="form__input" type="text" placeholder="Поиск">
-					<button class="form__btn" type="submit">найти</button>
-				</form>
-			</div>
-		</div> 
-		<div class="nav js-nav"> 
+		<!-- <div class="nav js-nav"> 
 			<div class="nav__main js-nav-main">
 				<a href="#" class="balance-link">На счету: <span>234 грн.</span></a>
 				<ul class="nav__list">
@@ -75,40 +70,40 @@
 				</div>
 			</div>
 			<i class="nav__overlay js-nav-overlay"></i>
-		</div>
+		</div> -->
 	</div>
-	<!-- END header--> 
+	<!-- END header-->    
 	
 	<!-- BEGIN  footer-->
 	<div class="footer">
 		<ul class="footer__nav">
-			<li><a href="#">Пресса о нас</a></li>
-			<li><a href="#">Прошедшие акции</a></li>
-			<li><a href="#">ЧаВо</a></li>
-			<li><a href="#">Пользовательское соглашение</a></li>
-			<li><a href="#">Политика конфиденциальности</a></li>
-			<li><a href="#">Партнёрам</a></li>
+			<li><a href="#">Вопросы и ответы</a></li>
+			<li><a href="#">Публичная оферта</a></li>
+			<li><a href="#">Пресса</a></li>
+			<li><a href="#">SuperDeal для бизнеса</a></li>
+			<li><a href="#">FAQ по разделу EuroDeal</a></li>
 		</ul>
-		<a href="#" class="btn-feedback">
-			У вас есть вопросы или предложения?
-			<span>напишите нам</span>
-		</a>
-		<div class="footer__soc">
-			<div>
-				<a href="#"><img src="img/soc-fb.svg" width="9" alt="img"></a>
-				<a href="#"><img src="img/soc-tw.svg" width="21" alt="img"></a>
-				<a href="#"><img src="img/soc-vk.svg" width="12" alt="img"></a>
-			</div>
-		</div>
-		<ul class="footer__contacts">
-			<li><a href="tel:+38044585-80-86">+38 (044) 585-80-86</a></li>
-			<li><a href="mailto:partners@pokupon.ua">partners@pokupon.ua</a></li>
+		<ul class="footer__nav">
+			<li><a href="#">Контакты</a></li>
+			<li><a href="#">Вакансии</a></li>
+			<li><a href="#">Покупка товаров</a></li>
+			<li><a href="#">Доставка товаров</a></li>
+			<li><a href="#">Справочная информация об услугах</a></li>
 		</ul>
-		<div class="footer__pay">
-			<img src="img/mc.png" width="155" alt="img">
-			<img src="img/visa.png" alt="img">
+		<div class="footer__info">
+			<p>Купоны на скидки — товары и услуги в Киеве могут стоить гораздо дешевле!</p>
+			<p>Регистрируйтесь и получайте самую достоверную информацию о скидках и акциях в Киеве — купоны на скидки помогут купить товары и услуги с гарантией экономии времени и средств.</p>
 		</div>
-	</div>
+		<div class="soc">
+			<a href="#" class="soc__gp"></a>
+			<a href="#" class="soc__fb"></a>
+			<a href="#" class="soc__vk"></a>
+		</div>
+		<div class="footer__tel">
+			<a href="tel:0443647228">(044)364 72 28</a>
+		</div>
+		<p>©Superdeal 2014</p>
+	</div>  
 	<!-- END footer--> 
 	<!-- load scripts -->
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>    
