@@ -18,14 +18,23 @@ head.ready(function() {
     });
 
     $('.touch body').swipe({
-        swipeLeft: function(event, direction, distance, duration, fingerCount) {
+        swipeRight: function(event, direction, distance, duration, fingerCount) {
             $("html").removeClass("has-open-nav");
             $(".js-nav").removeClass("is-active");
             $(".js-toggle-nav").removeClass("is-active");
         }
     });
 
-
+    $(".js-toggle-nav").on("click", function(event){
+        $("html").toggleClass("has-open-nav");
+        $(this).toggleClass("is-active");
+        $(".js-nav").toggleClass("is-active");
+        event.stopPropagation();
+        return false;
+    });
+    $(".js-nav").on("click", function(event){
+        event.stopPropagation();
+    });
 
 	$(".js-toggle").on("click", function(event){
 		var el = $(this).attr("data-toggle");
@@ -37,16 +46,7 @@ head.ready(function() {
 	$(".js-toggle-el").on("click", function(event){
 		event.stopPropagation();
 	});
-	$(".js-toggle-nav").on("click", function(event){
-		$("html").toggleClass("has-open-nav");
-		$(this).toggleClass("is-active");
-		$(".js-nav").toggleClass("is-active");
-		event.stopPropagation();
-		return false;
-	});
-	$(".js-nav-main").on("click", function(event){
-		event.stopPropagation();
-	});
+	
 	function number() { 
         var number = $(".js-number");
         number.each(function(){
