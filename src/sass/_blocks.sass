@@ -8,6 +8,25 @@
 	display: inline-block
 	vertical-align: middle
 	+s(discount)
+.page-nav
+	position: relative
+	z-index: 2
+	display: block
+	padding: 15px 10px
+	background: #f1faf1 
+	+g(#fdfefd, #f1faf1)
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+	color: $gray_d 
+	+bold
+	font-size: 16px
+	&:hover
+		color: $blue
+	&:before
+		content: ""
+		display: inline-block
+		margin-right: 17px
+		vertical-align: middle 
+		+svg(angle-l,11,21) 
 .price
 	display: inline-block
 	margin: 0 0 5px
@@ -15,7 +34,7 @@
 	font-size: 18px 
 	strong
 		font-weight: normal
-		+bold
+		+bold 
 		font-size: 22px
 	&__info
 		font-size: 12px
@@ -220,7 +239,13 @@
 
 .btn-close
 	+svg(close,20,20)
-
+.btn-dots
+	padding: 10px 
+	&:before
+		content: ""
+		display: inline-block 
+		vertical-align: middle
+		+svg(more,25,6)
 .btn-action
 	display: block
 	position: relative
