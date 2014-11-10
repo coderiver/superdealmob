@@ -76,7 +76,11 @@ $green_d: #693
 $border: #e2e2e2
 $light: #f8fafa
 
-
+=round 
+	border-radius: 5px
+=grad
+	+g(#fff, rgba(#fff, .8))
+ 
 body   
 	min-width: 480px
 	font-size: 14px
@@ -90,10 +94,10 @@ a
 	overflow: hidden
 	margin: 0 auto 
 	width: 480px
-
+.l-center
+	padding: 0 30px
 .header
 	position: relative
-	z-index: 2
 	background: #c4e8dc url(../img/header-bg.jpg) 0 0 no-repeat	
 	+cover
 	&__top
@@ -117,7 +121,8 @@ a
 			i
 				vertical-align: middle
 				margin-right: 16px
-	
+	&__user
+		text-transform: uppercase
 	&__main
 		position: relative
 		padding: 16px 0 0 
@@ -173,7 +178,7 @@ a
 			+background(linear-gradient(top,#fff,#f7f8f9 50%, #eef1f2 50%, #dde3e5))
 			.menu__text
 				text-align: right
-				padding-right: 50px
+				padding-right: 45px
 				&:after
 					display: none
 		&:hover
@@ -183,7 +188,7 @@ a
 				opacity: 1
 				visibility: visible
 		i
-			margin-right: 15px
+			margin-right: 12px
 	&__text
 		display: block
 		position: relative
