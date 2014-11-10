@@ -6,15 +6,15 @@
 		img
 			display: block
 			width: 100%
-
-	.counter
+	.counters
 		position: absolute
+		bottom: 60px
 		left: 20px
-		bottom: 60px
-	.buy-count
-		position: absolute
-		bottom: 60px
 		right: 20px
+	.counter,
+	.buy-count
+		display: inline-block
+		vertical-align: bottom
 	&__info
 		position: absolute
 		left: 0
@@ -46,7 +46,7 @@
 		color: $dark 
 		&:hover
 			color: $blue 
-	.btn-dots
+	.dots-more
 		position: absolute
 		right: 10px
 		bottom: 5px
@@ -174,3 +174,57 @@
 		&:active
 			background: #fff
 			color: #000  
+			
+.promo
+	margin: 20px 0 
+	padding: 0 30px
+	background: #fff
+	border-top: 1px solid $border
+	border-bottom: 1px solid $border
+	&__head
+		padding: 20px 60px 20px 20px
+		position: relative
+		.badge
+			right: -30px
+			top: -4px
+	&__title
+		color: $dark
+		font-size: 18px
+		line-height: 1.2
+		+bold
+	&__img
+		position: relative
+		margin-bottom: 16px
+		img
+			display: block
+			width: 100%
+			height: auto
+		.counters
+			position: absolute
+			bottom: 70px
+			left: 30px
+			right: 30px
+	&__price
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		display: table
+		table-layout: fixed
+		+g(rgba(#fff,.8), #fff 80%)
+		li
+			display: table-cell
+			vertical-align: middle
+			padding: 17px 0 0 
+			text-align: center
+		.price
+			margin: 0
+			color: $gray 
+			line-height: 1
+			&__info
+				padding: 3px 0 
+				text-align: center
+				color: $gray 
+	.soc-like
+		margin: 27px 0 23px 
+		
