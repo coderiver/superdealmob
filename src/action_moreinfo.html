@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html class="no-scroll">
 <head>
-	<title>action</title>
+	<title>action moreinfo</title>
 	@@include('_head.html')
 </head>
 <body>
@@ -9,7 +9,7 @@
 <div class="out">
 	@@include('_header_logined.html')
 	<a class="page-nav" href="#">
-		Вернуться к акциям
+		Вернуться к акции
 	</a> 
 	<div class="promo">
 		<div class="promo__head">
@@ -135,8 +135,24 @@
 		<div class="title">Популярные предложения</div>
 		@@include('_offer.html')
 	</div>
-	@@include('_footer.html')    
+	@@include('_footer.html')   
+
+	<button class="btn-close btn-close_window js-close-popup" type="button"></button>
+	<div class="window js-popup js-popup-promo is-active">
+		<div class="window__body">
+			<div class="l-center">
+				<div class="title">Выберитacе предложение:</div>
+				@@include('_offer_no-img.html') 
+				@@include('_offer_no-img.html') 
+				@@include('_offer_no-img.html') 
+				@@include('_offer_no-img.html') 
+				@@include('_offer_no-img.html') 
+				@@include('_offer_no-img.html') 
+			</div> 
+		</div>
+	</div>
+
 </div>
-<!-- END out-->  
-</body>
-</html>  
+<!-- END out-->   
+</body> 
+</html>    

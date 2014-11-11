@@ -10,17 +10,17 @@
 	+s(discount)
 .page-nav
 	position: relative
-	z-index: 2
+	z-index: 19
 	display: block
 	padding: 15px 10px
 	background: #f1faf1 
 	+g(#fdfefd, #f1faf1)
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 	color: $gray_d 
-	+bold
+	+reg
 	font-size: 16px
 	&:hover
-		color: $blue
+		+g(#f1faf1, #fdfefd)
 	&:before
 		content: ""
 		display: inline-block
@@ -449,7 +449,35 @@
 	.input
 		padding-left: 80px
 
-
+.window
+	position: fixed
+	top: 138px
+	left: 50%
+	right: 0
+	bottom: 0
+	z-index: 18
+	margin-left: -240px 
+	width: 480px
+	background: #eef1f2 
+	overflow-y: auto
+	display: none
+	&.is-active
+		display: block
+	&__title
+		border-top: 5px solid $dark 
+		padding: 15px 50px 22px 30px 
+		background: #3195ec url(../img/bg-blue-dark.png) 0 0 repeat
+		color: #fff
+		font-size: 20px
+		line-height: 1.2
+		+bold 
+.btn-close
+	position: absolute
+	top: 20px
+	right: 20px
+	z-index: 21
+	&_window
+		display: none
 .popup
 	position: fixed
 	top: 0

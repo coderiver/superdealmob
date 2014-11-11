@@ -86,6 +86,17 @@ html
 	+selection
 		background: rgba($blue, .2) 
 		color: #000 
+	&.no-scroll
+		overflow: hidden
+		body
+			overflow: hidden
+		.header__top,
+		.menu,
+		.header__cart,
+		.header__nav
+			display: none
+		.btn-close_window
+			display: block
 body   
 	min-width: 480px
 	font-size: 14px
@@ -96,6 +107,7 @@ body
 a
 	text-decoration: none
 .out
+	position: relative
 	overflow: hidden
 	margin: 0 auto 
 	width: 480px
@@ -103,15 +115,17 @@ a
 	padding: 0 30px
 .header
 	position: relative
+	z-index: 20
 	background: #c4e8dc url(../img/header-bg.jpg) 0 0 no-repeat	
 	+cover
+	box-shadow: 0 0 3px rgba(#000, 0.2)
 	&__top
 		padding: 0 20px 
 		background: $dark
-		+clr 
+		+clr  
 	&__info
 		float: right
-		width: 50%
+		width: 50% 
 		text-align: right
 		&:first-child
 			float: left

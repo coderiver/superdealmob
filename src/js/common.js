@@ -140,6 +140,7 @@ head.ready(function() {
         $("html").removeClass("no-scroll");
         return false;
     });
+    
 
     function tabsLoad() {
         var hash = window.location.hash;
