@@ -25,6 +25,7 @@ head.ready(function() {
         }
     });
 
+
     $(".js-toggle-nav").on("click", function(event){
         $("html").toggleClass("has-open-nav");
         $(this).toggleClass("is-active");
@@ -151,7 +152,7 @@ head.ready(function() {
         else {
             $('.js-tabs li:first').addClass("is-active");
             $('.js-tabs').next().show();
-        }
+        } 
         
     }
    tabsLoad();

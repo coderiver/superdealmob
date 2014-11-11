@@ -228,3 +228,75 @@
 	.soc-like
 		margin: 27px 0 23px 
 		
+.article
+	position: relative
+	color: $gray
+	font-size: 14px
+	+reg 
+	&__in
+		padding: 5px 30px 45px
+		position: relative
+	p
+		margin: 20px 0
+		&:first-child
+			margin-top: 0
+		
+	ul
+		margin: 20px 0
+		li
+			&:before
+				content: "-"  
+				display: inline-block
+				margin-right: 3px
+	img
+		display: block
+		margin: 25px 0 
+		width: 100%
+	.dots-more
+		position: absolute
+		right: 10px
+		bottom: 10px
+
+.title
+	margin: 20px 0
+	+bold
+	text-align: center
+	font-size: 20px
+	color: $dark 
+	text-shadow: 0 1px 0 rgba(#fff, 0.5)
+.offer
+	margin: 18px 0 
+	border: 1px solid $border
+	padding: 20px 20px 15px
+	background: #fff
+	+round 
+	&__media	
+		float: left
+		width: 140px
+		position: relative
+	.buy-count
+		position: absolute
+		left: 10px
+		bottom: 10px
+	&__img
+		display: block
+		position: relative
+		img
+			width: 100%
+			height: auto
+	&__body
+		overflow: hidden
+		padding: 0 0 16px 20px
+		a
+			color: $dark
+			&:hover
+				color: $blue 
+	&__meta	
+		+clr
+		padding-left: 10px 
+		.price
+			float: left
+			&__old
+				padding-left: 20px
+		.btn
+			float: right

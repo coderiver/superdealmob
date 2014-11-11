@@ -96,6 +96,21 @@
 				display: inline-block
 				vertical-align: middle 
 				+svg(btn-choose,16,15)
+.btn-simple
+	display: inline-block
+	padding: 13px 19px
+	background: #F1F6F9
+	border: 1px solid #C3C7CA
+	border-radius: 5px
+	text-align: center
+	font-size: 16px
+	color: $dark
+	+bold 
+	box-shadow: inset 0 2px 0 #FFF
+	&:hover
+		background: #dfe6ea
+	&:active
+		box-shadow: none
 .wtf
 	display: inline-block
 	vertical-align: middle
@@ -133,8 +148,8 @@
 
 .badge
 	position: absolute
-	right: 0
-	top: -3px
+	right: -4px
+	top: -4px
 	font-size: 24px
 	color: #fff
 	+med 
@@ -146,10 +161,16 @@
 		width: 75px
 		text-align: center
 		line-height: 37px
-		height: 37px
 		width: 75px
 		height: 37px
 		+rotate(45)
+	&_small
+		span
+			top: 15px
+			left: 16px
+			height: 30px
+			line-height: 30px
+
 .btn-submit
 	display: block
 	margin: 23px 0 30px 
@@ -217,48 +238,50 @@
 		
 
 .tabs
-	display: table
 	position: relative
 	z-index: 2
-	width: 100%
-	table-layout: fixed
+	&:after
+		content: "" 
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		width: 40px
+		+gh(rgba(#fff,0),rgba(#fff,1))
+	&__list
+		//overflow-x: hodden
+		overflow-y: hidden
+		font-size: 0
+		white-space: nowrap
 	li
-		display: table-cell
-		position: relative
+		display: inline-block
 		vertical-align: top
-		border-left: 1px solid $border 
-		background: rgba(#fff, .5) 
-		border-bottom: 1px solid $border 
-		&:first-child
-			border: 0
+		position: relative
+		height: 52px
+		line-height: 50px
+		border: 1px solid $border 
+		border-right: 0
+		background: #fff
 		&.is-active
+			border-bottom-color: #fff
 			z-index: 2
-			background: #fff 
 			a
 				color: $dark
-				&:after
-					content: "" 
-					position: absolute
-					bottom: -5px
-					height: 5px
-					left: 0
-					right: 0
-					background: #fff 
 	a
 		display: block
 		position: relative
-		padding: 0 5px 
-		height: 50px
-		line-height: 50px 
-		color: $gray_d
-		+bold
+		padding: 0 20px 
+		color: #adadad
+		font-size: 14px
+		text-transform: uppercase
+		+reg
 		text-align: center
 		&:hover
 			color: $blue 
-	span
-		display: inline-block
-		vertical-align: middle
-		line-height: 1.2
+.tab-content
+	display: none
+	background: #fff
+	border-bottom: 1px solid $border 
 		
 .panel
 	margin-bottom: 5px
