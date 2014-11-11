@@ -80,6 +80,8 @@ $light: #f8fafa
 	border-radius: 5px
 =grad
 	+g(#fff, rgba(#fff, .8))
+=grad2
+	+g(rgba(#fff, .8),#fff)
 html
 	+selection
 		background: rgba($blue, .2) 
@@ -160,7 +162,7 @@ a
 		
 .menu
 	position: relative
-	z-index: 2
+	z-index: 3
 	+cbold
 	font-size: 16px
 	text-transform: uppercase
@@ -232,6 +234,8 @@ a
 			padding: 13px 20px
 			color: #777  
 			border-top: 1px solid #d1d1d1 
+			&:hover
+				color: $blue 
 		 
 .nav
 	position: fixed
