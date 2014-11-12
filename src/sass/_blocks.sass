@@ -284,29 +284,42 @@
 	border-bottom: 1px solid $border 
 		
 .panel
-	margin-bottom: 5px
-	background: #fff 
+	margin: 3px 0
+	border-bottom: 1px solid $border 
+	background: #fff
 	+ .footer
 		margin-top: 20px
 	&.is-active
 		.panel__title
-			color: $dark 
+			background: #f5f8f9 
 	&__title
 		position: relative
+		display: table
+		width: 100%
 		border-top: 1px solid $border 
-		border-bottom: 1px solid $border 
-		padding: 15px 45px 15px 30px
 		font-size: 18px
+		line-height: 1.1
 		+bold
-		color: $gray_d  
+		color: $dark
 		cursor: pointer
-	&__body
+		box-shadow: inset 0 1px 0 #fff 
+		div
+			display: table-row
+			vertical-align: middle
+			height: 60px
+			min-height: 60px
+			
+		span
+			display: table-cell
+			vertical-align: middle
+			padding: 5px 45px 5px 30px 
+	&__body 
 		display: none
 		padding: 30px
 		line-height: 1.7
 		font-size: 14px
 		color: $dark
-		border-bottom: 1px solid $border 
+		border-top: 1px solid $border 
 		will-change: height
 	&__link
 		color: $gray_d
@@ -424,9 +437,23 @@
 	&:after
 		content: "" 
 		position: absolute
-		right: 11px
-		top: 17px
-		+arr(9,8,$gray_d,b)
+		right: 12px
+		top: 20px
+		+arr(9,5,$dark,b)
+	&__text	
+		display: block
+		border: 2px solid #b2d2c8
+		padding: 0 30px 0 16px 
+		height: 44px
+		line-height: 44px
+		background: #FFF
+		border-radius: 3px
+		color: $dark
+		font-size: 16px
+		+bold
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
 	select
 		position: absolute
 		top: 0
@@ -436,19 +463,17 @@
 		opacity: 0
 	option
 		padding: 10px 
-	&__placeholder
-		position: absolute
-		left: 8px
-		top: 0
-		height: 42px
-		line-height: 42px
-		color: #999
-		font-size: 14px
-		+reg 
-.select_city
-	.input
-		padding-left: 80px
-
+	&_cat
+		margin-bottom: 25px
+	// &__placeholder
+	// 	position: absolute
+	// 	left: 8px
+	// 	top: 0
+	// 	height: 42px
+	// 	line-height: 42px
+	// 	color: #999
+	// 	font-size: 14px
+	// 	+reg 
 .window
 	position: fixed
 	top: 138px
@@ -489,3 +514,24 @@
 	width: 480px
 	background: #fff
 	overflow-y: auto
+
+.action-btns
+	margin: 20px 0 
+	font-size: 0
+	text-align: center
+	a
+		display: inline-block
+		margin-left: 20px
+		vertical-align: middle
+		width: 30px
+		height: 30px
+		line-height: 30px
+		background: #F9FDFE
+		+round
+		box-shadow: 0 0 3px rgba(#000, 0.3)
+		&:first-child
+			margin-left: 0
+		img
+			vertical-align: middle
+		&:hover
+			box-shadow: 0 0 1px rgba(#000, 0.3)

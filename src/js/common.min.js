@@ -106,13 +106,13 @@ head.ready(function() {
 
     $(".js-select").each(function(){
         var val = $(this).find("option:checked").val();
-        $(this).find(".input").val(val);
+        $(this).find(".js-select-text").text(val);
 
     });
 
     $(".js-select select").on("change",function(){
         var val = $(this).val();
-        $(this).parents(".js-select").find(".input").val(val);
+        $(this).parents(".js-select").find(".js-select-text").text(val);
     });
 
     $(".js-input-date").each(function(){

@@ -23,7 +23,7 @@
 		padding: 0 40px 
 		+g(rgba(#fff,.8), rgba(#fff,1))
 		+clr
-		.price
+		.price 
 			float: left
 			height: 50px
 			margin: 0
@@ -230,12 +230,30 @@
 		
 .article
 	position: relative
-	color: $gray
+	color: $gray_d 
 	font-size: 14px
 	+reg 
 	&__in
 		padding: 5px 30px 45px
 		position: relative
+	h1,h2,h3,h4,h5,h6
+		font-weight: normal
+		+bold
+		color: $dark
+		text-align: center
+		+ p
+			margin-top: 10px
+
+	h1
+		font-size: 20px
+	h2
+		font-size: 18px
+	h3
+		font-size: 16px
+	h4
+		font-size: 15px
+	h5,h6
+		font-size: 14px
 	p
 		margin: 20px 0
 		&:first-child
@@ -248,15 +266,45 @@
 				content: "-"  
 				display: inline-block
 				margin-right: 3px
+	.address
+		li
+			&:before
+				display: none
 	img
 		display: block
 		margin: 25px 0 
 		width: 100%
+	hr
+		position: relative
+		border: 0
+		height: 12px
+		&:before
+			content: ""
+			position: absolute
+			top: -10px
+			left: -20px
+			right: -20px 
+			height: 12px
+			background: url(../img/wave1.png) 0 0 repeat-x
 	.dots-more
 		position: absolute
 		right: 10px
-		bottom: 10px
+		bottom: 10px 
+	.to-right
+		text-align: right
+		.dots-more
+			position: static
+			display: inline-block
+		
+.address
+	text-align: center
+	font-size: 16px
+	line-height: 1.9
 
+	a
+		color: $gray_d 
+		&[href^="http://"]
+			color: $green_d 
 .title
 	margin: 20px 0
 	+bold
@@ -292,6 +340,11 @@
 			color: $dark
 			&:hover
 				color: $blue 
+	&__info
+		overflow: hidden
+		padding: 0 0 16px 0
+		a
+			color: $green_d
 	&__meta	
 		+clr
 		padding-left: 10px 
@@ -301,3 +354,88 @@
 				padding-left: 20px
 		.btn
 			float: right
+	&__title
+		font-size: 14px
+		+bold
+		color: $dark 
+
+.code
+	margin: 20px 0 
+	padding: 16px 
+	background: #ffc
+	text-align: center
+	line-height: 1.3
+	border-radius: 20px
+	text-transform: uppercase
+	+bold
+	&__title
+		font-size: 11px
+		color: #ccbea3
+	&__body
+		margin: 0 0 16px 
+		font-size: 30px
+		color: $dark 
+	img
+		display: block
+		width: 100%
+		height: auto
+.string
+	position: relative
+	z-index: 2
+	margin: 25px 0
+	height: 30px
+	line-height: 30px
+	color: #fff
+	font-size: 18px
+	+bold
+	text-align: center 
+	&:before
+		content: ""
+		position: absolute
+		left: -40px
+		z-index: -1
+		top: -37px
+		width: 490px
+		height: 160px
+		background: url(../img/string.png) 0 0 no-repeat
+.post
+	margin: 25px 0 32px 
+	border: 1px solid $border
+	border-bottom: 0
+	background: #fff
+	border-radius: 5px 5px 0 0 
+	&__head	
+		padding: 20px 30px 25px
+		background: #f5f8f9 
+		line-height: 1.3
+		border-radius: 5px 5px 0 0 
+		.title
+			margin: 0
+	&__body
+		position: relative
+		padding: 17px 20px 17px 
+		&:before
+			content: ""
+			position: absolute
+			top: -10px
+			left: 0
+			right: 0 
+			height: 12px
+			background: url(../img/wave1.png) 0 0 repeat-x
+		&:after
+			content: ""
+			position: absolute
+			bottom: -10px
+			left: 0
+			right: 0 
+			height: 12px
+			background: url(../img/wave2.png) -2px 0 repeat-x
+	.map
+		width: 418px
+		margin-left: -20px 
+		img
+			margin: 0
+.map
+	img
+		display: block
+		margin: 0
