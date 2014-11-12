@@ -72,12 +72,21 @@
 	&:active
 		background: #ffdf07 
 		box-shadow: none
+	&_big
+		font-size: 18px
+		min-width: 0
+		padding: 0 10px
+		height: 50px
+		line-height: 50px  
 	&_large
 		font-size: 18px
 		min-width: 0
 		padding: 0 10px
 		height: 60px
-		line-height: 60px 
+		line-height: 60px  
+	&_liquid
+		width: 100%
+		display: block 
 	&_choose
 		padding: 0 14px 0 37px 
 		i
@@ -363,61 +372,67 @@
 		margin-top: -4px 
 		+arr(8,8,#fff,b)
 
+
+
 .field
 	display: block
 	position: relative
-	margin-bottom: 8px
+	margin-bottom: 18px
 	+clr
-	&__title 
-		float: left
-		padding: 12px 17px 0 0
-		width: 26%
-		font-size: 14px
-		color: $gray_d
-		text-align: right
-		+reg 
-	&__body
-		position: relative
-		float: left
-		width: 74%
-		i
-			position: absolute
-			top: 9px
-			right: 10px
-	&__btn
-		float: left
-	&__link
-		float: right
-		height: 42px
-		line-height: 42px
-		a
-			font-size: 12px
-			color: $gray_d
-			text-decoration: underline
-			&:hover
-				text-decoration: none
+	+ .btn
+		margin-top: 28px
+	// &__title 
+	// 	float: left
+	// 	padding: 12px 17px 0 0
+	// 	width: 26%
+	// 	font-size: 14px
+	// 	color: $gray_d
+	// 	text-align: right
+	// 	+reg 
+	// &__body
+	// 	position: relative
+	// 	float: left
+	// 	width: 74%
+	// 	i
+	// 		position: absolute
+	// 		top: 9px
+	// 		right: 10px
+	// &__btn
+	// 	float: left
+	// &__link
+	// 	float: right
+	// 	height: 42px
+	// 	line-height: 42px
+	// 	a
+	// 		font-size: 12px
+	// 		color: $gray_d
+	// 		text-decoration: underline
+	// 		&:hover
+	// 			text-decoration: none
 
 .input 
 	display: block 
-	padding: 0 8px  
 	width: 100%
-	height: 42px
-	background: #FFF
-	border: 1px solid #EEF1F2
+	border: 2px solid #b2d2c8
+	padding: 0 8px 
+	height: 44px
+	background: #fff
 	border-radius: 3px
-	box-shadow: inset 1px 1px 0 rgba(#000, 0.2)
 	color: $dark
-	font-size: 18px
-	+reg 
+	font-size: 14px
+	+reg
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
 	&:focus
-		box-shadow: 0 0 0 2px #3195EC
+		border-color: $green 
 	&[readonly]
 		border: 0
 		box-shadow: none 
 	&[type="date"]
 		opacity: 0
 		position: absolute
-		left: 0
+		left: 0 
 		top: 0
 		height: 42px
 		width: 100%
@@ -427,10 +442,13 @@
 		border-radius: 0
 	+placeholder
 		color: #999
-		+reg 
 	&_small
 		font-size: 14px
 		color: $gray_d 
+	&_textarea
+		resize: none
+		padding: 5px 8px 
+		height: 104px
 		
 .select
 	position: relative
@@ -443,9 +461,9 @@
 	&__text	
 		display: block
 		border: 2px solid #b2d2c8
-		padding: 0 30px 0 16px 
+		padding: 0 30px 0 8px 
 		height: 44px
-		line-height: 44px
+		line-height: 40px
 		background: #FFF
 		border-radius: 3px
 		color: $dark
@@ -496,6 +514,10 @@
 		font-size: 20px
 		line-height: 1.2
 		+bold 
+	&__content	
+		border-top: 1px solid $border 
+		background: #fff 
+		padding: 38px 48px 
 .btn-close
 	position: absolute
 	top: 20px

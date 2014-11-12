@@ -441,3 +441,27 @@
 	img
 		display: block
 		margin: 0
+		
+.message
+	position: relative
+	margin: 10px 0 
+	border: 1px solid $border
+	padding: 15px 20px 
+	color: $gray_d
+	font-size: 16px
+	text-align: center 
+	background: #fff
+	&:after
+		content: ""
+		position: absolute
+		bottom: -10px
+		left: 50%
+		margin-left: -10px
+		+arr(20,10,#fff,b)
+	&:before
+		content: ""
+		position: absolute
+		bottom: -11px
+		left: 50%
+		margin-left: -11px
+		+arr(22,11,$border,b) 
