@@ -382,14 +382,18 @@
 			color: $dark
 			&:hover
 				color: $blue 
+		ul
+			color: $gray_d 
+			span
+				color: $dark 
 	&__info
 		overflow: hidden
 		padding: 0 0 16px 0
 		a
 			color: $green_d
 	&__meta	
+		clear: both
 		+clr
-		padding-left: 10px 
 		.price
 			float: left
 			&__old
@@ -409,6 +413,80 @@
 		float: left
 	&__right
 		float: right
+	&__code
+		display: block
+		padding: 3px 0 
+		font-size: 22px
+		color: $blue
+		+bold
+		text-align: center
+	&__footer
+		margin: 5px 0 -15px -20px
+		padding: 25px 20px 15px
+		width: 418px 
+		background: $light
+		position: relative 
+		border-radius: 0 0 5px 5px 
+		+clr
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0 
+			height: 12px
+			background: url(../img/wave2.png) -2px 0 repeat-x
+		.action-btns
+			float: right
+			margin: 0
+	&__bill
+		float: right
+		color: $green_d
+		+bold
+		font-size: 14px
+		text-decoration: underline
+	&__date
+		float: left
+		line-height: 1.2
+		font-size: 12px
+		&:last-child
+			text-align: right
+			float: right
+		strong
+			display: block
+			font-weight: normal
+			+bold
+			font-size: 14px
+	.gift
+		float: left
+.offer
+	&.is-inactive
+		.offer__body
+			color: $gray 
+			a
+				color: $gray
+		.offer__code
+			color: #ccc
+		.offer__media
+			img
+				+gray
+		.checkbox
+			span
+				color: $green_d 
+
+.gift
+	i
+		vertical-align: middle
+		margin-right: 10px 
+	div
+		display: inline-block
+		vertical-align: middle
+		white-space: nowrap
+		strong
+			display: block
+			font-weight: normal
+			+bold
+			color: $green_d
 .is-remove-ready
 	+transform(translateX(-30px))
 	opacity: 0
