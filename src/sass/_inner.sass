@@ -313,12 +313,35 @@
 	font-size: 20px
 	color: $dark 
 	text-shadow: 0 1px 0 rgba(#fff, 0.5)
+.offer-group
+	.offer
+		margin: 0
+		border-radius: 0 
+		margin-bottom: -1px
+		&:first-child
+			border-radius: 5px 5px 0 0 
+		&:last-child
+			border-radius: 0 0 5px 5px
+.box
+	border: 1px solid $border
+	padding: 20px 20px 15px
+	background: #fff
 .offer
+	position: relative
 	margin: 18px 0 
 	border: 1px solid $border
 	padding: 20px 20px 15px
 	background: #fff
 	+round 
+	+clr
+	&_order
+		padding-bottom: 28px
+		.offer__meta
+			padding: 0
+		.price
+			width: 140px
+			&__info
+				margin-bottom: 11px
 	&__media	
 		float: left
 		width: 140px
@@ -353,13 +376,26 @@
 			float: left
 			&__old
 				padding-left: 20px
-		.btn
+		.btnm
+		.number
 			float: right
 	&__title
 		font-size: 14px
 		+bold
 		color: $dark 
-
+	.btn-remove
+		position: absolute 
+		right: -14px 
+		top: 16px
+	&__left
+		float: left
+	&__right
+		float: right
+.is-remove-ready
+	+transform(translateX(-30px))
+	opacity: 0
+	+transition(opacity .3s, transform .3s)
+	will-change: opacity, transform
 .code
 	margin: 20px 0 
 	border: 1px solid
@@ -465,3 +501,25 @@
 		left: 50%
 		margin-left: -11px
 		+arr(22,11,$border,b) 
+
+.info-list
+	margin: 20px 0 
+	color: $gray_d 
+	li
+		border-top: 1px solid $border 
+		padding: 0 10px 
+		+justify
+		&:first-child
+			border: 0
+		&:last-child
+			color: #000 
+			.price
+				color: #000 
+	&__left
+		display: inline-block
+		text-align: left
+		font-size: 16px
+		+bold 
+	.price
+		text-align: right
+		color: $gray_d 

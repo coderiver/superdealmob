@@ -172,5 +172,19 @@ head.ready(function() {
         $(this).parents(".js-message").fadeOut(200);
         return false;
     });
+
+    $(".js-pay-radio input").on("change",function () {
+        $(".js-pay-radio").removeClass("is-active");
+        $(this).parents(".js-pay-radio").addClass("is-active");
+    });
+
+// remove any block
+    $(".js-remove").on("click",function(){
+        $(this).parents(".js-removeable").addClass("is-remove-ready");
+        var timer = setTimeout(function(){
+            $(".is-remove-ready").remove();
+        }, 300);
+        return false;
+    });
    
 });

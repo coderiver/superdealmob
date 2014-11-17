@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+	<title>Buy</title>
+	@@include('_head.html')
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	@@include('_header_logined.html')
+	<a class="page-nav" href="#">
+		Вернуться к акции
+	</a> 
+	<div class="l-center">
+		<div class="title">Оформление заказа</div>
+		<div class="offer-group">
+			<div class="offer offer_order js-removeable">
+				<div class="offer__media">
+					<a href="#" class="offer__img">
+						<img src="img/offer.jpg" alt="img">
+					</a>
+				</div>
+				<div class="offer__body">
+					<p><a href="#">Баттерфляй, кроль или брасс - дешевле только у нас! 10 посещений бассейна "ОЛИМП" для одного или двоих всего за 399 грн. вместо 800 грн.!</a></p> 
+				</div>
+				<div class="offer__meta">
+					<div class="price price_center">
+						<div class="price__info">Сумма</div>
+						<strong>536</strong> грн
+					</div>
+					<div class="number js-number" data-max-number="1000">
+						<div class="number__title">Количество</div>
+						<div class="number__in">
+							<button class="number__btn number__minus js-minus"></button>
+		                    <input type="text" class="number__input" value="3">
+		                    <button class="number__btn number__plus js-plus"></button>
+		                </div>
+	                </div>
+				</div>	
+				<button type="button" class="btn-remove js-remove"></button>
+			</div>
+			<div class="offer offer_order js-removeable">
+				<div class="offer__media">
+					<a href="#" class="offer__img">
+						<img src="img/offer.jpg" alt="img">
+					</a>
+				</div>
+				<div class="offer__body">
+					<p><a href="#">Баттерфляй, кроль или брасс - дешевле только у нас! 10 посещений бассейна "ОЛИМП" для одного или двоих всего за 399 грн. вместо 800 грн.!</a></p> 
+				</div>
+				<div class="offer__meta">
+					<div class="price price_center">
+						<div class="price__info">Сумма</div>
+						<strong>536</strong> грн
+					</div>
+					<div class="number js-number" data-max-number="1000">
+						<div class="number__title">Количество</div>
+						<div class="number__in">
+							<button class="number__btn number__minus js-minus"></button>
+		                    <input type="text" class="number__input" value="3">
+		                    <button class="number__btn number__plus js-plus"></button>
+		                </div>
+	                </div>
+				</div>	
+				<button type="button" class="btn-remove js-remove"></button>
+			</div>
+			<div class="offer">
+				<label class="field field_no-margin">
+					<span class="field__title">Введите промо код</span>
+					<input type="text" class="input">
+					<span class="field__error">Невозможно применить код</span>
+				</label>
+			</div>
+			<div class="offer">
+				<div class="offer__left">
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>
+							<i class="icon-gift"></i>
+							Оформить как подарок
+						</span>
+					</label>
+				</div>
+				<div class="offer__right"><i class="icon-gift-gray"></i></div>
+			</div>
+		</div>
+		<ul class="info-list">
+			<li>
+				<span class="info-list__left">Стоимость товаров в корзине:</span>
+				<div class="price"><strong>1608</strong> грн</div>
+			</li>
+			<li>
+				<span class="info-list__left">Стоимость доставки:</span>
+				<div class="price"><strong>35</strong> грн</div>
+			</li>
+			<li>
+				<span class="info-list__left">Итого к оплате:</span>
+				<div class="price"><strong>1643</strong> грн</div>
+			</li>
+		</ul>
+	</div>
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>
+				<span>Персональные данные</span>
+			</div>
+		</div> 
+		<div class="panel__body js-accordion-body">
+			<div class="panel__in">
+				<label class="field">
+					<input type="text" class="input" placeholder="ФИО">
+				</label>
+				<label class="field">
+					<input type="tel" class="input" placeholder="Контактный телефон">
+				</label> 
+				<div class="field"> 
+					<label class="checkbox">
+						<input type="checkbox">
+						<span>Я согласен с условиями Публичной оферты</span>
+					</label>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>
+				<span>Выберите способ доставки</span>
+			</div>
+		</div>
+		<div class="panel__body js-accordion-body">
+			<div class="panel__in">
+				<div class="field">
+					<div class="select js-select">
+						<div class="select__text js-select-text"></div>
+						<select>
+							<option value="Доставка курьером Постман">Доставка курьером Постман</option>
+							<option value="Доставка курьером Постман">Доставка курьером Постман</option>
+							<option value="Доставка курьером Постман">Доставка курьером Постман</option>
+							<option value="Доставка курьером Постман">Доставка курьером Постман</option>
+						</select>
+					</div>
+				</div>
+				<div class="field">
+					<div class="field__item field__street">
+						<input type="text" class="input" placeholder="Улица">
+					</div>
+					<div class="field__item field__house">
+						<input type="text" class="input" placeholder="Дом">
+					</div>
+					<div class="field__item field__house">
+						<input type="text" class="input" placeholder="Кв.">
+					</div>
+				</div>
+				<label class="field">
+					<input type="text" class="input" placeholder="Фамилия">
+				</label>
+				<label class="field">
+					<input type="text" class="input" placeholder="Имя">
+				</label>
+				<label class="field">
+					<input type="tel" class="input" placeholder="Телефон">
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>
+				<span>Выберите способ доставки</span>
+			</div>
+		</div>
+		<div class="panel__body js-accordion-body">
+			<div class="pay js-pay">
+				<label class="pay__link js-pay-radio is-active">
+					<span class="pay__img">
+						<img src="img/pay-card.png" alt="img">
+					</span>
+					<span class="pay__title">Visa/Mastercard</span>
+					<i class="wtf"></i>
+					<input type="radio" name="pay" checked>
+					<i class="icon-check"></i>
+				</label>
+				<label class="pay__link js-pay-radio">
+					<span class="pay__img">
+						<img src="img/pay-privat.png" alt="img">
+					</span>
+					<span class="pay__title">Приват 24</span>
+					<i class="wtf"></i>
+					<input type="radio" name="pay">
+					<i class="icon-check"></i>
+				</label>
+				<label class="pay__link js-pay-radio">
+					<span class="pay__img">
+						<img src="img/pay-terminal.png" alt="img">
+					</span>
+					<span class="pay__title">Терминалы</span>
+					<i class="wtf"></i> 
+					<input type="radio" name="pay">
+					<i class="icon-check"></i>
+				</label>
+				<label class="pay__link js-pay-radio">
+					<span class="pay__img">
+						<img src="img/pay-bank.png" alt="img">
+					</span>
+					<span class="pay__title">Касса банка</span>
+					<i class="wtf"></i>
+					<input type="radio" name="pay">
+					<i class="icon-check"></i>
+				</label>
+				<label class="pay__link js-pay-radio">
+					<span class="pay__img">
+						<img src="img/pay-liqpay.png" alt="img">
+					</span>
+					<span class="pay__title">LiqPay</span>
+					<i class="wtf"></i>
+					<input type="radio" name="pay">
+					<i class="icon-check"></i>
+				</label>
+				<label class="pay__link js-pay-radio">
+					<span class="pay__img">
+					</span>
+				</label>
+			</div>
+		</div> 
+	</div>
+	<div class="l-center">
+		<button class="btn-submit is-liquid has-shadow" type="submit">Перейти к оплате <i class="icon-angle-r"></i></button>
+	</div>
+	@@include('_footer.html')    
+</div>
+<!-- END out-->  
+</body>
+</html>  

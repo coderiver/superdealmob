@@ -1,13 +1,23 @@
 .icon-pin
 	+svg(pin,13,19)
+.icon-gift
+	+svg(gift,30,30)
+.icon-gift-gray
+	+svg(gift-gray,30,30)
 .icon-users
 	display: inline-block
 	vertical-align: middle
 	+s(users)
+.icon-cart
+	display: inline-block
+	vertical-align: middle
+	+s(cart)
 .icon-discount
 	display: inline-block
 	vertical-align: middle
-	+s(discount)
+	+s(discount) 
+.icon-angle-r
+	+svg(angle-r,11,21)
 .page-nav
 	position: relative
 	z-index: 19
@@ -19,6 +29,7 @@
 	color: $gray_d 
 	+reg
 	font-size: 16px
+	text-transform: uppercase
 	&:hover
 		+g(#f1faf1, #fdfefd)
 	&:before
@@ -32,6 +43,10 @@
 	margin: 0 0 5px
 	color: $dark
 	font-size: 18px 
+	&_center
+		text-align: center
+		.price__info
+			text-align: center
 	strong
 		font-weight: normal
 		+bold 
@@ -120,6 +135,65 @@
 		background: #dfe6ea
 	&:active
 		box-shadow: none
+.btn-remove
+	+svg(remove,26,26)
+	background-color: #fff
+	border-radius: 50%  
+.number
+	position: relative
+	width: 144px
+	&__title
+		margin-bottom: 4px
+		text-align: center
+		font-size: 12px
+		color: $gray_d
+	&__in
+		position: relative
+	&__input
+		display: block
+		padding: 0 25px 
+		width: 100%
+		height: 44px
+		font-size: 20px
+		text-align: center
+		+bold
+		color: #000 
+		border-radius: 4px 
+		background: #fff
+		border: 2px solid #b2d2c8
+		&:focus
+			background: #fff 
+	&__btn
+		position: absolute
+		top: 2px
+		height: 40px
+		width: 41px
+		background: none
+		text-align: center
+		line-height: 1
+		&:before,
+		&:after
+			content: "" 
+			position: absolute
+			background: $green
+		&:before
+			width: 19px
+			height: 3px
+			top: 19px
+			left: 10px
+	&__plus
+		right: 0
+		border-left: 1px solid $border 
+		&:after
+			top: 11px
+			left: 18px
+			width: 3px
+			height: 19px
+	&__minus
+		left: 0
+		border-right: 1px solid $border 
+		// &:before
+		// 	+svg(minus,19,19)
 .wtf
 	display: inline-block
 	vertical-align: middle
@@ -182,6 +256,7 @@
 
 .btn-submit
 	display: block
+	position: relative
 	margin: 23px 0 30px 
 	text-align: center
 	color: #fff 
@@ -195,7 +270,14 @@
 	&:hover
 		background: #528500 
 		+g(#528500, #7aad00)
-
+	.icon-angle-r
+		position: absolute
+		position: absolute
+		top: 50%
+		right: 20px
+		margin-top: -10px
+	&.has-shadow
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5)
 .btn-more
 	display: block
 	margin: 30px 0 
@@ -219,7 +301,8 @@
 		margin-right: 10px
 		vertical-align: middle
 		+s(download)
-
+.is-liquid
+	width: 100%
 .choose
 	position: relative
 	margin: 0 auto 
@@ -230,6 +313,15 @@
 	border: 2px solid #B2D2C8
 	+round
 	+clr
+	&_small
+		display: inline-block
+		vertical-align: middle
+		width: 240px
+		.btn
+			min-width: 120px
+		+ .btn
+			vertical-align: middle
+			margin-left: 2px
 	&__text
 		float: left
 		width: 50%
@@ -239,6 +331,8 @@
 		top: -2px
 		right: -2px
 		border-radius: 0 5px 5px 0
+	.price
+		margin-bottom: 0
 .soc-like
 	text-align: center
 	&__in
@@ -301,6 +395,14 @@
 	&.is-active
 		.panel__title
 			background: #f5f8f9 
+			&:after
+				+rotate(-180)
+	&_center
+		&.is-active
+			.panel__title
+				background: #fff
+		.panel__title
+			text-align: center
 	&__title
 		position: relative
 		display: table
@@ -311,13 +413,21 @@
 		+bold
 		color: $dark
 		cursor: pointer
-		box-shadow: inset 0 1px 0 #fff 
+		box-shadow: inset 0 1px 0 #fff
+		&:after
+			content: ""
+			position: absolute
+			right: 16px
+			top: 27px
+			+svg(angle-b,14,8)
+			opacity: 0.5
+			will-change: transform
+			+tr(transform .3s)
 		div
 			display: table-row
 			vertical-align: middle
 			height: 60px
 			min-height: 60px
-			
 		span
 			display: table-cell
 			vertical-align: middle
@@ -330,6 +440,8 @@
 		color: $dark
 		border-top: 1px solid $border 
 		will-change: height
+	&__in
+		padding: 0 18px 
 	&__link
 		color: $gray_d
 		+reg
@@ -379,16 +491,39 @@
 	position: relative
 	margin-bottom: 18px
 	+clr
+	&_no-margin
+		margin-bottom: 0 
 	+ .btn
 		margin-top: 28px
-	// &__title 
-	// 	float: left
-	// 	padding: 12px 17px 0 0
-	// 	width: 26%
-	// 	font-size: 14px
-	// 	color: $gray_d
-	// 	text-align: right
-	// 	+reg 
+	&__item
+		float: left
+		margin-left: 6px
+		&:first-child
+			margin: 0
+	&__street
+		width: 204px
+	&__house
+		width: 84px
+	.checkbox
+		padding-top: 3px
+	&__title 
+		display: block
+		margin: 0 0 15px
+		color: $green_d 
+		+bold
+		font-size: 16px 
+		text-decoration: underline
+	&__error
+		display: block
+		margin: 14px 0 0
+		color: $red
+		font-size: 14px 
+		&:before
+			content: ""
+			display: inline-block
+			margin-right: 15px
+			vertical-align: middle
+			+svg(error,26,26) 
 	// &__body
 	// 	position: relative
 	// 	float: left
@@ -449,9 +584,94 @@
 		resize: none
 		padding: 5px 8px 
 		height: 104px
-		
+.pay
+	+clr
+	&__link
+		float: left
+		position: relative
+		margin: 0 0 10px 10px
+		border: 1px solid $border
+		width: 200px
+		height: 120px
+		background: #fff
+		+round 
+		text-align: center
+		color: $dark
+		font-size: 14px
+		&.is-active
+			border-color: $green
+			box-shadow: inset 0 0 0 2px $green 
+		.wtf
+			position: absolute
+			top: 5px
+			right: 5px
+			opacity: 0.4
+			border-radius: 50% 
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1)
+	&__img
+		display: block
+		height: 55px
+		margin-top: 17px
+		img
+			width: auto
+	input
+		opacity: 0
+		position: absolute
+		&:checked
+			+ .icon-check
+				display: block
+	.icon-check 
+		position: absolute
+		top: 12px
+		left: 12px
+		+svg(check,20,20)
+		display: none
+			
+.checkbox
+	display: inline-block
+	input
+		position: absolute
+		z-index: 2
+		opacity: 0
+		&:checked
+			+ span
+				&:after
+					opacity: 1
+					+transform(translateY(0))
+	span
+		position: relative
+		padding-left: 45px
+		min-height: 34px
+		line-height: 34px
+		display: inline-block
+		vertical-align: middle
+		&:before
+			content: "" 
+			position: absolute
+			left: 0
+			top: 0
+			width: 34px
+			height: 34px
+			background: #FFF
+			border: 2px solid #7FC345
+			+round
+		&:after
+			content: ""
+			position: absolute
+			left: 8px
+			top: 6px
+			z-index: 2
+			+svg(check,20,20)
+			+transform(translateY(-4px))
+			opacity: 0
+			+transition(transform .2s, opacity .2s)
+		i
+			vertical-align: middle
+		.icon-gift
+			margin: -7px 5px 0 0
 .select
 	position: relative
+	text-align: left
 	&:after
 		content: "" 
 		position: absolute
@@ -467,8 +687,8 @@
 		background: #FFF
 		border-radius: 3px
 		color: $dark
-		font-size: 16px
-		+bold
+		font-size: 14px
+		+reg
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis

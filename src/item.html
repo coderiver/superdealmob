@@ -1,24 +1,156 @@
 <!doctype html>
 <html>
 <head>
-	<title>index</title>
+	<title>item</title>
 	@@include('_head.html')
 </head>
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	@@include('_header.html')
-	@@include('_main-item2.html')
-	<div class="l-center">
-		<a href="#" class="btn-submit">Вход / Регистрация</a>
-		@@include('_item-hot.html')
-		@@include('_item-hot.html')
-		@@include('_item.html')
-		<a href="#" class="btn-more">Прошедшие акции</a>
+	@@include('_header_logined.html')
+	<a class="page-nav" href="#">
+		Вернуться к акциям
+	</a> 
+	<div class="promo">
+		<div class="promo__head">
+			<div class="promo__title">Изучай английский эффективно! 1, 2 или 3 месяца изучения английского (любого уровня) в школе D'elite School всего от 99 грн.!</div>
+			<div class="badge">
+				<img src="img/badge.png" alt="img">
+				<span>-45%</span>
+			</div>
+		</div>
+		<div class="promo__img">
+			<img src="img/promo.jpg" alt="img">
+			<div class="counters">
+				<ul class="counter">
+					<li class="counter__item">
+						0 
+						<span class="counter__label">дней</span>
+					</li>
+					<li class="counter__item">
+						11 
+						<span class="counter__label">часов</span>
+					</li>
+					<li class="counter__item">
+						14 
+						<span class="counter__label">минут</span>
+					</li>
+				</ul>
+				<div class="buy-count">
+					<i class="icon-users"></i>15
+				</div>
+			</div>
+			<ul class="promo__price">
+				<li>
+					<div class="price price_gray">
+						<strong>3270</strong> грн
+						<div class="price__info">Номинал</div>
+					</div>
+				</li>
+				<li>
+					<div class="price is-gray">
+						<strong>3270</strong> грн
+						<div class="price__info">Экономия до</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="to-center">
+			<div class="field">
+				<div class="select js-select">
+					<div class="select__text js-select-text"></div>
+					<select>
+						<option value="Доставка курьером Постман">Выберите размер</option>
+						<option value="Доставка курьером Постман">Выберите размер</option>
+						<option value="Доставка курьером Постман">Выберите размер</option>
+						<option value="Доставка курьером Постман">Выберите размер</option>
+					</select>
+				</div>
+			</div> 
+			<div class="choose choose_small">
+				<div class="choose__text">
+					<div class="price">
+						<strong>2999</strong> грн
+					</div>
+				</div>
+				<a class="btn btn_large" href="#">Купить</a>
+			</div>
+			<a class="btn btn_large" href="#"><i class="icon-cart"></i> корзину</a>
+		</div>
+		<div class="soc-like">
+			<div class="soc-like__in">
+				<img src="img/soc-like.png" alt="img">
+			</div>
+		</div>
+	</div> 
+	<div class="tab-group js-tabs-group">
+		<div class="tabs js-tabs">
+			<ul class="tabs__list">
+				<li><a href="#js-tab-terms">Условия</a></li>
+				<li><a href="#js-tab-description">Описание</a></li>
+				<li><a href="#js-tab-comments">Комментарии </a></li>
+				<li><a href="#js-tab-address">Где проводится</a></li>
+			</ul>
+		</div>
+		<div class="tab-content js-tabs-content" data-id="#js-tab-terms">
+			<div class="article">
+				<div class="article__in">
+					​<p>С купоном вы получаете до 91% скидки на 1 ,2 или 3 месяца изучения английского языка в представительстве американской компании «D’elite School»!</p>
+					<p>С купоном за 99 грн. вы получаете 1 месяц изучения английского (любого уровня), оригинальной стоимостью 1090 грн.</p>
+
+					<p>С купоном за 299 грн. вы получаете 2 месяца изучения английского языка (любого уровня), оригинальной стоимостью 2180 грн.</p>
+
+					<p>С купоном за 499 грн. вы получаете 3 месяца изучения английского языка (любого уровня), оригинальной стоимостью 3270 грн.</p>
+
+					<p>Приобретая один из купонов, вы обмениваете его на 1, 2 или 3 месяца изучения английского языка в представительстве американской компании «ETS» ™ - «D’elite School».</p>
+					<img src="img/img1.jpg" alt="img">
+					<p>
+						16 ак. ч. - 1 месяц <br>
+						32 ак. ч. - 2 месяца. <br>
+						48 ак. ч. - 3 месяца. <br>
+					</p>
+					<p>Уровни набора групп:</p>
+					<ul>
+						<li>Beginner.</li>
+						<li>Elementary.</li>
+						<li>Pre-Intermediate.</li>
+						<li>Intermediate.</li>
+					</ul>
+					<p>Внимание! Для всех уровней действуют интенсивные программы обучения! Работают группы выходного дня! <br>
+					Для регистрации на данный курс свяжитесь с менеджерами школы по тел., указанным в контактах. <br>
+					Обязательно предъявляйте распечатанный экземпляр купона!</p>
+				</div> 
+				<a href="#" class="dots-more"></a>
+			</div>
+		</div>
+		<div class="tab-content js-tabs-content" data-id="#js-tab-description">
+			<div class="article">
+				<div class="article__in">
+					​<p>tab3</p>
+				</div> 
+			</div>
+		</div>
+		<div class="tab-content js-tabs-content" data-id="#js-tab-comments">
+			<div class="article">
+				<div class="article__in">
+					​<p>tab4</p>
+				</div> 
+			</div>
+		</div>
+		<div class="tab-content js-tabs-content" data-id="#js-tab-address">
+			<div class="article">
+				<div class="article__in">
+					​<p>tab5</p>
+				</div> 
+			</div>
+		</div>
 	</div>
-	@@include('_banner.html')
+	<div class="l-center">
+		<div class="title">Популярные предложения</div>
+		@@include('_offer.html')
+	</div>
 	@@include('_footer.html')    
 </div>
-<!-- END out--> 
+<!-- END out-->  
 </body>
-</html> 
+</html>  
