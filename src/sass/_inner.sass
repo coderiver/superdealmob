@@ -619,3 +619,27 @@
 	.price
 		text-align: right
 		color: $gray_d 
+		
+.grid
+	margin: 20px 0 
+	padding: 10px 
+	background: #fff
+	text-align: center
+	+round
+	border: 1px solid $border
+	&__table
+		display: table
+		width: 100%
+		table-layout: fixed
+		text-align: center
+		border-top: 1px solid #f1f1f1
+		&:first-child
+			border-top: 0
+	&__cell 
+		display: table-cell
+		padding: 10px 
+		vertical-align: middle
+		border-left: 1px solid $border
+		&:first-child
+			border: 0
+	
