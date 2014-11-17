@@ -233,6 +233,8 @@
 	color: $gray_d 
 	font-size: 14px
 	+reg 
+	&_single
+		padding: 28px 0 0
 	&__in
 		padding: 5px 30px 45px
 		position: relative
@@ -243,7 +245,7 @@
 		text-align: center
 		+ p
 			margin-top: 10px
-
+	
 	h1
 		font-size: 20px
 	h2
@@ -254,6 +256,11 @@
 		font-size: 15px
 	h5,h6
 		font-size: 14px
+	b, strong
+		font-weight: normal
+		+bold
+		font-size: 16px
+		color: $dark 
 	p
 		margin: 20px 0
 		&:first-child
@@ -266,6 +273,17 @@
 				content: "-"  
 				display: inline-block
 				margin-right: 3px
+	dd,dt
+		display: inline
+	dt
+		+bold
+		font-size: 16px
+		color: $dark 
+	dd
+		&:after
+			content: ""
+			display: block 
+			margin-bottom: 20px
 	.address
 		li
 			&:before
