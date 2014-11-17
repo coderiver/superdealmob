@@ -583,6 +583,8 @@
 	font-size: 16px
 	text-align: center 
 	background: #fff
+	&:last-child
+		margin: 30px 0
 	&:after
 		content: ""
 		position: absolute
@@ -597,7 +599,21 @@
 		left: 50%
 		margin-left: -11px
 		+arr(22,11,$border,b) 
-
+	&__title
+		font-size: 16px
+		+bold
+	.input
+		margin: 18px 0 14px
+	.social
+		margin: 20px 0 0 
+.message_top
+	&:after
+		bottom: auto
+		top: -10px
+		+arr(20,10,#fff,t)
+	&:before
+		top: -11px
+		+arr(22,11,$border,t) 
 .info-list
 	margin: 20px 0 
 	color: $gray_d 
@@ -638,8 +654,67 @@
 	&__cell 
 		display: table-cell
 		padding: 10px 
-		vertical-align: middle
+		vertical-align: top
 		border-left: 1px solid $border
 		&:first-child
 			border: 0
-	
+.social
+	+clr
+	text-align: center
+	font-size: 0
+	a
+		display: inline-block
+		vertical-align: middle
+		margin-left: 5px
+		width: 45px
+		height: 36px
+		line-height: 36px
+		border-radius: 3px 
+		box-shadow: inset 0 -4px 0 rgba(#000,.2) 
+		&:first-child
+			margin: 0
+		img
+			vertical-align: middle
+		&:active
+			box-shadow: none 
+	&__fb
+		background: #4769a5 
+	&__tw
+		background: #65ccef
+	&__gp
+		background: #bf3727 
+		
+.table-wrap
+	margin: 20px 0 
+	border-top: 1px solid $border
+	border-bottom: 1px solid $border
+	padding: 10px 30px 
+	background: #fff
+.table
+	font-size: 14px
+	color: $dark 
+	line-height: 1.2
+	text-align: center
+	th
+		padding: 5px 20px 12px 
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 12px
+		color: $gray 
+		&:first-child
+			text-align: left
+	td
+		border-top: 1px solid #ebf1f4 
+		padding: 12px 20px 
+		vertical-align: bottom
+		&:first-child
+			text-align: left
+			span
+				color: $gray
+		span
+			color: $green_d
+		strong
+			font-size: 16px
+			color: #000
+			+bold
+			font-weight: normal 
