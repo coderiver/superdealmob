@@ -342,8 +342,15 @@
 			border-radius: 0 0 5px 5px
 .box
 	border: 1px solid $border
-	padding: 20px 20px 15px
 	background: #fff
+	+round
+	&_center
+		text-align: center
+	&__item
+		padding: 20px 20px 15px
+		border-top: 1px solid $border 
+		&:first-child
+			border: 0
 .offer
 	position: relative
 	margin: 18px 0 
@@ -573,6 +580,7 @@
 	img
 		display: block
 		margin: 0
+		max-width: 100%
 		
 .message
 	position: relative
