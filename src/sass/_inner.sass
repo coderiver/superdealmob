@@ -319,10 +319,22 @@
 	text-align: center
 	font-size: 16px
 	line-height: 1.9
-
+	&_item
+		border-bottom: 1px solid $border
+		padding: 10px 
+		font-size: 14px
+		line-height: 1.4
+		&:last-child
+			border: 0
+			margin-bottom: 20px
+	&__title
+		font-size: 16px
+		+bold
+		color: $dark 
 	a
 		color: $gray_d 
-		&[href^="http://"]
+		&[href^="http://"],
+		&[href^="mailto:"]
 			color: $green_d 
 .title
 	margin: 20px 0
@@ -351,6 +363,8 @@
 		border-top: 1px solid $border 
 		&:first-child
 			border: 0
+	.map
+		margin-bottom: 20px
 .offer
 	position: relative
 	margin: 18px 0 
