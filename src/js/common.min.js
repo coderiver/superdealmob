@@ -186,5 +186,14 @@ head.ready(function() {
         }, 300);
         return false;
     });
+
+    $(".js-tag-remove").on("click",function(){
+        $(this).remove();
+        return false;
+    }); 
+    $(".js-tag-like").on("click",function(){
+        $(this).toggleClass("is-active");
+        return false;
+    });
    
 });

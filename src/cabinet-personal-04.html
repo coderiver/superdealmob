@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+	<title>Cabinet personal 04</title>
+	@@include('_head.html')
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	@@include('_header.html')
+	<a class="page-nav" href="#">
+		Вернуться к акциям
+	</a> 
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>
+				<span>Личные данные</span>
+			</div>
+		</div>
+		<div class="panel__body js-accordion-body">
+			<ul class="info">
+				<li class="info__item">
+					<div class="info__title">Имя</div>
+					<div class="info__text">Petrov Vasily Ivanovych</div>
+				</li>
+				<li class="info__item">
+					<div class="info__title">Пол</div>
+					<div class="info__text">муж.</div>
+				</li>
+				<li class="info__item">
+					<div class="info__title">E-mail</div>
+					<div class="info__text">mail@mail.com</div>
+				</li>
+				<li class="info__item">
+					<div class="info__title">Телефон</div>
+					<div class="info__text">0978765432</div>
+				</li>
+				<li class="info__item">
+					<div class="info__title">Адрес</div>
+					<div class="info__text">Крещатик, 22</div>
+				</li>
+				<li class="info__item">
+					<div class="info__title">Город</div>
+					<div class="info__text">Киев</div>
+				</li>
+			</ul>
+			<div class="btn-more-group">
+				<a href="#" class="btn-more btn-more_small btn-more_no-icon">Редактировать</a>
+				<a href="#" class="btn-more btn-more_small btn-more_no-icon">Сменить пароль</a>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>   
+				<span>Настройка ежедневной рассылки</span>
+			</div> 
+		</div> 
+		<div class="panel__body js-accordion-body">
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Присылать мне акции в следующих городах:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<input type="text" class="input input_select" autocomplete placeholder="Добавить город">
+							<select>
+								<option value="Днепропетровск">Днепропетровск</option> 
+								<option value="Львов">Львов</option>
+								<option value="Киев">Киев</option>
+								<option value="Харьков">Харьков</option>
+								<option value="Одесса">Одесса</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="tag-cloud">
+						<button class="tag tag_close js-tag-remove">Киев</button>
+						<button class="tag tag_close js-tag-remove">Львов</button>
+					</div>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox" checked>
+						<span>
+							<em>Не присылать мне акции из категории только "для женщин"</em>
+						</span>
+					</label>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox">
+						<span>
+							<em>Присылать только новые акции</em>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Частота получения рассылки:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<span class="select__text">3 раза в неделю</span>
+							<select>
+								<option value="3 раза в неделю">3 раза в неделю</option>
+								<option value="1 раза в неделю">1 раза в неделю</option> 
+								<option value="2 раза в неделю">2 раза в неделю</option>  
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Мне нравятся акции следующих тематик:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="tag-cloud">
+						<button class="tag tag_like is-active js-tag-like">Еда</button>
+						<button class="tag tag_like js-tag-like">Красота</button>
+						<button class="tag tag_like js-tag-like">Спорт</button>
+						<button class="tag tag_like js-tag-like">Развлечения</button>
+						<button class="tag tag_like js-tag-like">Товары</button>
+						<button class="tag tag_like js-tag-like">Туризм</button>
+						<button class="tag tag_like js-tag-like">Авто</button>
+						<button class="tag tag_like js-tag-like">Здоровье</button>
+						<button class="tag tag_like js-tag-like">Обучение</button>
+						<button class="tag tag_like js-tag-like">Другое</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>   
+				<span>Дополнительные рассылки</span>
+			</div> 
+		</div> 
+		<div class="panel__body js-accordion-body">
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Присылать мне акции в следующих городах:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<input type="text" class="input input_select" autocomplete placeholder="Добавить город">
+							<select>
+								<option value="Днепропетровск">Днепропетровск</option> 
+								<option value="Львов">Львов</option>
+								<option value="Киев">Киев</option>
+								<option value="Харьков">Харьков</option>
+								<option value="Одесса">Одесса</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="tag-cloud">
+						<button class="tag tag_close js-tag-remove">Киев</button>
+						<button class="tag tag_close js-tag-remove">Львов</button>
+					</div>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox" checked>
+						<span>
+							<em>Не присылать мне акции из категории только "для женщин"</em>
+						</span>
+					</label>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox">
+						<span>
+							<em>Присылать только новые акции</em>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Частота получения рассылки:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<span class="select__text">3 раза в неделю</span>
+							<select>
+								<option value="3 раза в неделю">3 раза в неделю</option>
+								<option value="1 раза в неделю">1 раза в неделю</option> 
+								<option value="2 раза в неделю">2 раза в неделю</option>  
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Мне нравятся акции следующих тематик:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="tag-cloud">
+						<button class="tag tag_like is-active js-tag-like">Еда</button>
+						<button class="tag tag_like js-tag-like">Красота</button>
+						<button class="tag tag_like js-tag-like">Спорт</button>
+						<button class="tag tag_like js-tag-like">Развлечения</button>
+						<button class="tag tag_like js-tag-like">Товары</button>
+						<button class="tag tag_like js-tag-like">Туризм</button>
+						<button class="tag tag_like js-tag-like">Авто</button>
+						<button class="tag tag_like js-tag-like">Здоровье</button>
+						<button class="tag tag_like js-tag-like">Обучение</button>
+						<button class="tag tag_like js-tag-like">Другое</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel_center js-accordion">
+		<div class="panel__title js-accordion-title">
+			<div>   
+				<span>Специальные рассылки</span>
+			</div> 
+		</div> 
+		<div class="panel__body js-accordion-body">
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Присылать мне акции в следующих городах:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<input type="text" class="input input_select" autocomplete placeholder="Добавить город">
+							<select>
+								<option value="Днепропетровск">Днепропетровск</option> 
+								<option value="Львов">Львов</option>
+								<option value="Киев">Киев</option>
+								<option value="Харьков">Харьков</option>
+								<option value="Одесса">Одесса</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<div class="tag-cloud">
+						<button class="tag tag_close js-tag-remove">Киев</button>
+						<button class="tag tag_close js-tag-remove">Львов</button>
+					</div>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox" checked>
+						<span>
+							<em>Не присылать мне акции из категории только "для женщин"</em>
+						</span>
+					</label>
+				</div>
+				<div class="field">
+					<label class="checkbox checkbox_mod">
+						<input type="checkbox">
+						<span>
+							<em>Присылать только новые акции</em>
+						</span>
+					</label>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Частота получения рассылки:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="field__body">
+						<div class="select">
+							<span class="select__text">3 раза в неделю</span>
+							<select>
+								<option value="3 раза в неделю">3 раза в неделю</option>
+								<option value="1 раза в неделю">1 раза в неделю</option> 
+								<option value="2 раза в неделю">2 раза в неделю</option>  
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel__item">
+				<div class="field">
+					<span class="field__title">
+						Мне нравятся акции следующих тематик:
+						<a class="wtf wtf_light" href="#"></a>
+					</span>
+					<div class="tag-cloud">
+						<button class="tag tag_like is-active js-tag-like">Еда</button>
+						<button class="tag tag_like js-tag-like">Красота</button>
+						<button class="tag tag_like js-tag-like">Спорт</button>
+						<button class="tag tag_like js-tag-like">Развлечения</button>
+						<button class="tag tag_like js-tag-like">Товары</button>
+						<button class="tag tag_like js-tag-like">Туризм</button>
+						<button class="tag tag_like js-tag-like">Авто</button>
+						<button class="tag tag_like js-tag-like">Здоровье</button>
+						<button class="tag tag_like js-tag-like">Обучение</button>
+						<button class="tag tag_like js-tag-like">Другое</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div class="action-btn-group">
+		<button class="btn btn_big btn_liquid" type="submit">Сохранить изменения</button>
+		<button class="btn-more btn-more_no-icon" type="button">Отписаться от всего</button>
+	</div>
+	
+	@@include('_footer.html')    
+</div>
+<!-- END out--> 
+</body>
+</html>

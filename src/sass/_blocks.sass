@@ -223,6 +223,10 @@
 	+svg(wtf,26,26)
 	&:hover
 		opacity: 0.9
+.wtf_light
+	opacity: 0.4
+	border-radius: 50% 
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1)
 .counters
 	+justify
 .counter 
@@ -307,6 +311,11 @@
 	&_small
 		padding: 14px 17px 
 		font-size: 16px
+		+bold
+	&_inline
+		display: inline-block 
+		padding: 13px 27px 
+		font-size: 18px
 		+bold
 .btn-more-wrap
 	margin: 30px 0 
@@ -437,6 +446,10 @@
 	&_center
 		.panel__title
 			text-align: center
+	&.is-inactive
+		pointer-events: none
+		.panel__title
+			color: #c6c6c6 
 	&__title
 		position: relative
 		display: table
@@ -474,6 +487,13 @@
 		color: $dark
 		border-top: 1px solid $border 
 		will-change: height
+		.info
+			margin-top: -10px
+	&__item
+		border-top: 1px solid $border
+		padding: 20px 0 0 
+		&:first-child
+			border: 0
 	&__in
 		padding: 0 18px 
 	&__link
@@ -542,11 +562,26 @@
 		padding-top: 3px
 	&__title 
 		display: block
-		margin: 0 0 15px
-		color: $green_d 
+		position: relative
+		margin: 0 0 7px
+		padding-right: 40px
 		+bold
+		color: $gray_d 
 		font-size: 16px 
-		text-decoration: underline
+		a
+			display: inline-block
+			margin-bottom: 7px
+			color: $green_d 
+			text-decoration: underline
+		.wtf
+			position: absolute
+			right: 0
+			top: 0
+		+ .tag-cloud
+			margin-top: 14px 
+	&__body
+		display: block
+		position: relative
 	&__error
 		display: block
 		margin: 14px 0 0
@@ -668,6 +703,7 @@
 		color: $dark 
 	&_small
 		font-size: 12px
+	
 	input
 		position: absolute
 		z-index: 2
@@ -708,6 +744,11 @@
 			vertical-align: middle
 		.icon-gift
 			margin: -7px 5px 0 0
+	em
+		font-style: normal
+		line-height: 1.4
+		vertical-align: middle
+		display: inline-block
 	a
 		color: $green_d
 		text-decoration: underline 
@@ -724,6 +765,7 @@
 	&:after
 		content: "" 
 		position: absolute
+		z-index: 2 
 		right: 12px
 		top: 20px
 		+arr(9,5,$dark,b)
@@ -775,6 +817,10 @@
 		opacity: 0
 	option
 		padding: 10px 
+	.input
+		position: relative
+		z-index: 1
+		padding-right: 40px
 	&_cat
 		margin-bottom: 25px
 	// &__placeholder
@@ -924,3 +970,77 @@
 		+g(#db4242, #bd2424)
 		&:hover
 			+g(#bd2424, #db4242)
+.info
+	&__item
+		display: table
+		width: 100%
+		table-layout: fixed
+		border-top: 1px solid $border 
+		&:first-child
+			border: 0
+	&__title
+		display: table-cell
+		padding: 13px 5px 13px 30px
+		width: 135px
+		vertical-align: middle
+		font-size: 14px
+		color: $gray 
+	&__text 
+		display: table-cell
+		vertical-align: middle
+		font-size: 16px
+		
+.btn-more-group
+	+clr
+	.btn-more
+		margin: 10px 0 0 
+		width: 49%
+		float: right
+		&:first-child
+			float: left
+.tag-cloud
+	font-size: 0 		
+.tag
+	display: inline-block
+	margin: 0 10px 10px 0
+	border: 1px solid #DDE4E6
+	padding: 0 19px 
+	line-height: 40px
+	height: 40px
+	background: #EBF1F4
+	+reg
+	font-size: 14px
+	color: $gray_d 
+	+round
+	&:hover
+		background: #e5eaec 
+	&_close
+		&:after
+			content: ""
+			display: inline-block
+			margin-left: 21px
+			vertical-align: middle
+			+svg(close2,14,14) 
+	&_like
+		padding-left: 13px
+		background: #f5f8f9 
+		color: $gray 
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			+svg(like,17,15) 
+	&.is-active
+		background: #ebf1f4 
+		color: $gray_d 
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			+svg(like-act,17,15) 
+
+.action-btn-group
+	margin: 30px
+	.btn-more
+		margin: 20px 0 

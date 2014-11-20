@@ -598,7 +598,7 @@
 		
 .message
 	position: relative
-	margin: 10px 0 
+	margin: 10px 0 13px
 	border: 1px solid $border
 	padding: 15px 20px 
 	color: $gray_d
@@ -624,10 +624,17 @@
 	&__title
 		font-size: 16px
 		+bold
+	&__name	
+		margin: 0 0 12px 
+		font-size: 20px 
+		+bold
+		color: $dark 
 	.input
 		margin: 18px 0 14px
 	.social
 		margin: 20px 0 0 
+	.btn-submit
+		margin-bottom: 10px 
 .message_top
 	&:after
 		bottom: auto
@@ -636,6 +643,8 @@
 	&:before
 		top: -11px
 		+arr(22,11,$border,t) 
+.message_small
+	font-size: 14px
 .info-list
 	margin: 20px 0 
 	color: $gray_d 
