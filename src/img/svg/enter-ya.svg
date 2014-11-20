@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="15" height="25" viewBox="0 0 15 25">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #cc3333;
+        filter: url(#filter-chain-1);
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.5"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+      <feImage x="1.875" y="0.1875" preserveAspectRatio="none" width="10.3125" height="21.59375" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAuMzEyNSIgaGVpZ2h0PSIyMS41OTM3NSI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUuMTU2IiB5MT0iMjEuNTk0IiB4Mj0iNS4xNTYiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4zIiBmaWxsPSJ1cmwoI2dyYWQpIi8+PC9zdmc+"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="overlay" in2="dropShadow" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M12.351,1.624 C12.351,1.624 9.078,1.624 9.078,1.624 C5.864,1.624 3.137,4.072 3.137,8.823 C3.137,11.673 4.458,13.775 6.811,14.811 C6.811,14.811 2.420,22.758 2.420,22.758 C2.276,23.017 2.420,23.219 2.649,23.219 C2.649,23.219 4.687,23.219 4.687,23.219 C4.859,23.219 4.974,23.161 5.031,23.017 C5.031,23.017 9.021,15.214 9.021,15.214 C9.021,15.214 10.457,15.214 10.457,15.214 C10.457,15.214 10.457,23.017 10.457,23.017 C10.457,23.104 10.543,23.219 10.657,23.219 C10.657,23.219 12.437,23.219 12.437,23.219 C12.609,23.219 12.667,23.132 12.667,22.989 C12.667,22.989 12.667,1.913 12.667,1.913 C12.667,1.711 12.552,1.624 12.351,1.624 ZM10.457,13.372 C10.457,13.372 9.250,13.372 9.250,13.372 C7.356,13.372 5.519,11.990 5.519,8.535 C5.519,4.935 7.241,3.467 8.992,3.467 C8.992,3.467 10.457,3.467 10.457,3.467 C10.457,3.467 10.457,13.372 10.457,13.372 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

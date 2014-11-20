@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="15" height="27" viewBox="0 0 15 27">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #f1f1f1;
+        filter: url(#filter-chain-1);
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+      <feImage x="1.90625" y="-0.5" preserveAspectRatio="none" width="11.0625" height="23.75" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTEuMDYyNSIgaGVpZ2h0PSIyMy43NSI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUuNTMxIiB5MT0iMjMuNzUiIHgyPSI1LjUzMSIgeTI9IjAiPgogIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPgogIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjMiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="overlay" in2="dropShadow" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M13.046,9.663 C13.046,9.663 9.336,9.663 9.336,9.663 C9.336,9.663 9.343,7.617 9.343,7.617 C9.343,6.551 9.444,5.979 10.976,5.979 C10.976,5.979 13.023,5.979 13.023,5.979 C13.023,5.979 13.023,1.890 13.023,1.890 C13.023,1.890 9.747,1.890 9.747,1.890 C5.813,1.890 4.429,3.874 4.429,7.209 C4.429,7.209 4.429,9.663 4.429,9.663 C4.429,9.663 1.975,9.663 1.975,9.663 C1.975,9.663 1.975,13.753 1.975,13.753 C1.975,13.753 4.429,13.753 4.429,13.753 C4.429,13.753 4.429,25.616 4.429,25.616 C4.429,25.616 9.336,25.616 9.336,25.616 C9.336,25.616 9.336,13.753 9.336,13.753 C9.336,13.753 12.612,13.753 12.612,13.753 C12.612,13.753 13.046,9.663 13.046,9.663 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

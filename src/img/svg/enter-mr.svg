@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #ffcc33;
+        filter: url(#filter-chain-1);
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+      <feImage x="1" y="-0.34375" preserveAspectRatio="none" width="21.625" height="20.75" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjEuNjI1IiBoZWlnaHQ9IjIwLjc1Ij48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTAuODEzIiB5MT0iMjAuNzUiIHgyPSIxMC44MTMiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4zIiBmaWxsPSJ1cmwoI2dyYWQpIi8+PC9zdmc+"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="overlay" in2="dropShadow" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M12.130,6.078 C13.784,6.078 15.338,6.814 16.480,7.958 C16.480,7.958 16.480,7.966 16.480,7.966 C16.480,7.413 16.853,6.998 17.363,6.998 C17.363,6.998 17.494,6.998 17.494,6.998 C18.293,6.998 18.463,7.757 18.463,7.998 C18.463,7.998 18.466,16.545 18.466,16.545 C18.408,17.104 19.043,17.390 19.397,17.032 C20.768,15.618 22.405,9.783 18.543,6.396 C14.937,3.245 10.102,3.766 7.535,5.538 C4.798,7.424 3.045,11.595 4.751,15.514 C6.597,19.789 11.902,21.065 15.049,19.793 C16.643,19.148 17.381,21.306 15.724,22.013 C13.223,23.075 6.255,22.968 2.999,17.331 C0.802,13.526 0.920,6.828 6.750,3.355 C11.213,0.697 17.095,1.438 20.637,5.140 C24.349,9.014 24.132,16.263 20.517,19.086 C18.878,20.365 16.438,19.117 16.461,17.252 C16.461,17.252 16.438,16.642 16.438,16.642 C15.302,17.773 13.784,18.435 12.130,18.435 C8.862,18.435 5.982,15.556 5.982,12.293 C5.982,8.990 8.862,6.078 12.130,6.078 C12.130,6.078 12.130,6.078 12.130,6.078 ZM16.244,12.055 C16.119,9.660 14.341,8.223 12.200,8.223 C12.200,8.223 12.118,8.223 12.118,8.223 C9.640,8.223 8.268,10.172 8.268,12.381 C8.268,14.856 9.928,16.421 12.103,16.421 C14.533,16.421 16.133,14.642 16.244,12.539 C16.244,12.539 16.244,12.055 16.244,12.055 C16.244,12.055 16.244,12.055 16.244,12.055 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="19" height="22" viewBox="0 0 19 22">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #f1f1f1;
+        filter: url(#filter-chain-1);
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#000000" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+      <feImage x="1.6875" y="-0.375" preserveAspectRatio="none" width="14.875" height="18.59375" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQuODc1IiBoZWlnaHQ9IjE4LjU5Mzc1Ij48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iNy40MzgiIHkxPSIxOC41OTQiIHgyPSI3LjQzOCIgeTI9IjAiPgogIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPgogIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBvcGFjaXR5PSIwLjMiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="overlay" in2="dropShadow" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M15.896,11.771 C16.586,12.515 16.932,13.520 16.932,14.784 C16.932,15.707 16.757,16.518 16.408,17.217 C16.058,17.916 15.588,18.494 14.998,18.951 C14.299,19.500 13.532,19.891 12.696,20.124 C11.860,20.357 10.797,20.473 9.508,20.473 C9.508,20.473 2.072,20.473 2.072,20.473 C2.072,20.473 2.072,1.896 2.072,1.896 C2.072,1.896 8.635,1.896 8.635,1.896 C9.999,1.896 11.032,1.948 11.735,2.052 C12.438,2.156 13.097,2.374 13.713,2.707 C14.378,3.065 14.875,3.543 15.204,4.142 C15.532,4.741 15.696,5.431 15.696,6.213 C15.696,7.120 15.470,7.926 15.016,8.633 C14.563,9.340 13.937,9.860 13.139,10.193 C13.139,10.193 13.139,10.293 13.139,10.293 C14.287,10.534 15.206,11.027 15.896,11.771 ZM10.725,6.225 C10.571,5.909 10.332,5.681 10.007,5.539 C9.699,5.406 9.336,5.334 8.915,5.321 C8.495,5.308 7.870,5.302 7.038,5.302 C7.038,5.302 6.714,5.302 6.714,5.302 C6.714,5.302 6.714,9.232 6.714,9.232 C6.714,9.232 7.300,9.232 7.300,9.232 C8.098,9.232 8.658,9.224 8.978,9.207 C9.298,9.191 9.629,9.103 9.970,8.945 C9.970,8.945 9.970,8.945 9.970,8.945 C10.344,8.771 10.602,8.530 10.743,8.222 C10.884,7.914 10.955,7.557 10.955,7.149 C10.955,6.849 10.879,6.542 10.725,6.225 ZM11.779,13.349 C11.546,13.025 11.197,12.780 10.731,12.613 C10.448,12.505 10.059,12.445 9.564,12.432 C9.069,12.420 8.406,12.414 7.574,12.414 C7.574,12.414 6.714,12.414 6.714,12.414 C6.714,12.414 6.714,17.067 6.714,17.067 C6.714,17.067 6.963,17.067 6.963,17.067 C8.177,17.067 9.017,17.059 9.483,17.042 C9.949,17.026 10.423,16.913 10.905,16.705 C11.330,16.523 11.640,16.254 11.835,15.901 C12.030,15.547 12.128,15.146 12.128,14.697 C12.128,14.123 12.012,13.674 11.779,13.349 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

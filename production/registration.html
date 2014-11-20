@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html class="no-scroll">
 <head>
-	<title>action</title>
+	<title>Registration</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=480,user-scalable=no">
 	<!-- <meta name="viewport" content="initial-scale=1,user-scalable=no"> -->
@@ -130,7 +130,7 @@
 			<div class="counters">
 				<ul class="counter">
 					<li class="counter__item">
-						0 
+						0  
 						<span class="counter__label">дней</span>
 					</li>
 					<li class="counter__item">
@@ -296,8 +296,69 @@
 	</div>  
 	<!-- END footer--> 
 	<!-- load scripts -->
-	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>    
+	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>   
+
+	<button class="btn-close btn-close_window js-close-popup" type="button"></button>
+	<div class="window window_center js-popup js-popup-promo is-active">
+		<div class="window__body">
+			<div class="window__content">
+				<div class="window__item">
+					<div class="title">Обратная связь</div>
+					<form>
+						<label class="field">
+							<input type="email" class="input" placeholder="E-mail">
+						</label>
+						<label class="field">
+							<input type="password" class="input" placeholder="Пароль">
+						</label>
+						<div class="btn-wrap">
+							<button class="btn btn_medium is-liquid" type="submit">Войти</button>
+						</div>
+					</form>
+				</div>
+				<div class="window__item">
+					<div class="title">Войти с помощью</div>
+					<div class="soc-enter">
+						<a href="#" class="soc-enter__vk"></a>
+						<a href="#" class="soc-enter__ya"></a>
+						<a href="#" class="soc-enter__mr"></a>
+						<a href="#" class="soc-enter__fb"></a>
+						<a href="#" class="soc-enter__gp"></a>
+					</div>
+				</div>
+				<div class="window__item">
+					<div class="title">Регистрация</div>
+					<form>
+						<label class="field">
+							<input type="email" class="input" placeholder="E-mail">
+						</label>
+						<div class="select select_with-label js-select">
+							<span class="select__text js-select-text">Днепропетровск</span>
+							<span class="select__label">Город</span>
+							<select>
+								<option value="Днепропетровск">Днепропетровск</option>
+								<option value="Львов">Львов</option>
+								<option value="Киев">Киев</option>
+								<option value="Харьков">Харьков</option>
+								<option value="Одесса">Одесса</option>
+							</select>
+						</div>  
+						<label class="checkbox checkbox_small">
+							<input type="checkbox" checked>
+							<span>
+								Я согласен с <a href="#">условиями использования сайта</a>
+							</span>
+						</label>
+						<div class="btn-wrap"> 
+							<button class="btn-submit btn-submit_small is-liquid" type="submit">Регистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div> 
+
 </div>
-<!-- END out-->  
-</body>
-</html>  
+<!-- END out-->   
+</body> 
+</html>    
